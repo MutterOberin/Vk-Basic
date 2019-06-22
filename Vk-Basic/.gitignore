@@ -1,0 +1,9 @@
+# Visual Studio Stuff
+# =====================
+*.filters
+*.user
+
+# Visual Studio Folders
+# =====================
+.vs
+x64
