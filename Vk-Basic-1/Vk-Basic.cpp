@@ -25,12 +25,26 @@ void PrintPhysicalDevice(VkPhysicalDevice device)
     vkGetPhysicalDeviceProperties(device, &props);
 
     std::cout << std::endl;
-    std::cout << "Device Name:           " << props.deviceName << std::endl;
+    std::cout << "Device Name:                   " << props.deviceName << std::endl;
     std::cout << "================================================================================" << std::endl;
-    std::cout << "Device API    Version: " << VK_VERSION_MAJOR(props.apiVersion) << "." << VK_VERSION_MINOR(props.apiVersion) << "." << VK_VERSION_PATCH(props.apiVersion) << std::endl;
-    std::cout << "Device Driver Version: " << VK_VERSION_MAJOR(props.driverVersion) << "." << VK_VERSION_MINOR(props.driverVersion) << "." << VK_VERSION_PATCH(props.driverVersion) << std::endl;
 
-    std::cout << "Device Type:           ";
+    uint32_t major = 0;
+    uint32_t minor = 0;
+    uint32_t patch = 0;
+
+    major = VK_VERSION_MAJOR(props.apiVersion);
+    minor = VK_VERSION_MINOR(props.apiVersion);
+    patch = VK_VERSION_PATCH(props.apiVersion);
+
+    std::cout << "Device API    Version:         " << major << "." << minor << "." << patch << std::endl;
+
+    major = VK_VERSION_MAJOR(props.driverVersion);
+    minor = VK_VERSION_MINOR(props.driverVersion);
+    patch = VK_VERSION_PATCH(props.driverVersion);
+
+    std::cout << "Device Driver Version:         " << major << "." << minor << "." << patch << std::endl;
+
+    std::cout << "Device Type:                   ";
 
     if (props.deviceType == 0) std::cout << "Other";
 
