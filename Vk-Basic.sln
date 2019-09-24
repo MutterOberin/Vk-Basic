@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vk-Basic-1", "Vk-Basic-1\Vk-Basic.vcxproj", "{320B57A8-BDFD-475B-BC99-8D823D83F6CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vk-Basic-1", "Vk-Basic-1\Vk-Basic-1.vcxproj", "{320B57A8-BDFD-475B-BC99-8D823D83F6CB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vk-GLFW", "Vk-GLFW\Vk-GLFW.vcxproj", "{0C48CD61-D5C8-42F9-8A08-1D9F1A7F40A0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vk-GLFW-1", "Vk-GLFW-1\Vk-GLFW-1.vcxproj", "{0C48CD61-D5C8-42F9-8A08-1D9F1A7F40A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vk-GLFW-2", "Vk-GLFW-2\Vk-GLFW-2.vcxproj", "{E7F20D38-EE68-45D3-880E-9C474A08BF8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0C48CD61-D5C8-42F9-8A08-1D9F1A7F40A0}.Debug|x64.Build.0 = Debug|x64
 		{0C48CD61-D5C8-42F9-8A08-1D9F1A7F40A0}.Release|x64.ActiveCfg = Release|x64
 		{0C48CD61-D5C8-42F9-8A08-1D9F1A7F40A0}.Release|x64.Build.0 = Release|x64
+		{E7F20D38-EE68-45D3-880E-9C474A08BF8B}.Debug|x64.ActiveCfg = Debug|x64
+		{E7F20D38-EE68-45D3-880E-9C474A08BF8B}.Debug|x64.Build.0 = Debug|x64
+		{E7F20D38-EE68-45D3-880E-9C474A08BF8B}.Release|x64.ActiveCfg = Release|x64
+		{E7F20D38-EE68-45D3-880E-9C474A08BF8B}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
